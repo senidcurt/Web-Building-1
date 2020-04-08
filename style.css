@@ -1,0 +1,70 @@
+
+body {
+    font-family: 'Roboto';
+}
+
+
+/***************************************** Header MENU ****************************/
+
+.menu-img {
+    width: calc(0.7em + 1vw);
+    ;
+}
+
+.menu-div>span {
+    font-size: calc(0.7em + 1vw);
+}
+
+header h1 {
+    font-size: calc(1.5em + 1vw);
+}
+
+/***************************************** Header SECTION ****************************/
+
+header h1 {
+    font-weight: 100;
+}
+
+header a {
+    font-size: 14px;
+}
+
+#hero-section {
+    background: url('imgs/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 80vh;
+    
+    min-height: 30vh;
+}
+
+@media screen and (max-width: 1100px) {
+    #hero-section {
+        height: 30vh;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #hero-section h3 {
+       font-size: 14px !important;
+       letter-spacing: 0px !important;
+    }
+  }
+
+
+
+#hero-section h3{
+    font-size: calc(17px + (26 - 10) * (100vw - 500px) / (1900 + 200));
+    width: fit-content;
+    letter-spacing: 2px;
+}
+
+/***************************************** FOOTER SECTION ****************************/
+
+#post-menu li>a {
+    color: #ccc !important;
+}
+
+.copy-right {
+    background: #222;
+}
